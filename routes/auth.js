@@ -2,6 +2,7 @@ const router = require("express").Router();
 const { createUser, signUserIn } = require("../controllers/auth");
 
 //REGISTER
+//REGISTER
 router.post("/register", async (req, res) => {
   try {
     const createdUser = await createUser(req.body);
